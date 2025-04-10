@@ -1,0 +1,3 @@
+${firstname},${lastname},${totalprice},${depositpaid},${checkin},${checkout},${additionalneeds}
+Jesse,Smith,300,false,2025-04-27,2025-04-27,piscina        
+Jhon,Smith,220,false,2025-04-27,2025-04-27,tennis de mesa
