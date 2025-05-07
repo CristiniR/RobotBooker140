@@ -91,6 +91,13 @@ Delete Booking
     ${response}    DELETE    url=${url}/booking/${booking_id}    headers=${headers}
 
     Status Should Be    201
+
+Ping HealthCheck
+    Verificar se o serviço esta online    ${url}   
+
+    ${response}    GET    url=${url}/ping 
+    
+    Status Should Be    201
    
 
 
