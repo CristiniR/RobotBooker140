@@ -24,4 +24,12 @@ Get booking Id
     Status Should Be    200
     ${booking_id}    Set Variable    ${response_body}[0][bookingid]
     Set Suite Variable    ${booking_id}
+
+Verificar se o serviço esta online
+    [Arguments]    ${url}
+
+    ${response}    GET    url=${url}/ping 
+
+    Should Be Equal As Numbers    ${response.status_code}    201
+    Should Be Equal As Strings    ${response.text}    Created
     
